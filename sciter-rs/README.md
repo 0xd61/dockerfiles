@@ -23,6 +23,6 @@ $ ./hello-world
 The `$USER` environment variable can be specified, which is used by `cargo`. The default is `root`.
 
 ```sh
-$ docker run --rm -it -e USER="John Doe" -v $(pwd):/source kaitsh/sciter-rs
+$ docker run --rm -it -e USER="John Doe" -v $(pwd):/source:Z kaitsh/sciter-rs
 ```
 
