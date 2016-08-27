@@ -1,5 +1,5 @@
 FROM debian:wheezy
-MAINTAINER Johannes Schickling "schickling.j@gmail.com"
+MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 # needed by cargo
 ENV USER root
