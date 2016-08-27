@@ -30,7 +30,7 @@ apt-get autoclean && apt-get clean # remove --purge -y curl && apt-get autoclean
 wget https://github.com/c-smile/sciter-sdk/raw/master/bin.gtk/libsciter-gtk-64.so
 mv libsciter-gtk-64.so /usr/lib
 echo '/usr/lib' > /etc/ld.so.conf.d/libsciter.conf
-ldconf
+ldconfig
 
 
 # prepare dir
