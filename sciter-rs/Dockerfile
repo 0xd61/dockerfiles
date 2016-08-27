@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM ubuntu:16.10
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 # needed by cargo
