@@ -19,8 +19,8 @@ curl -sL https://static.rust-lang.org/dist/rust-nightly-$triple.tar.gz | tar xvz
 curl -sL https://static.rust-lang.org/cargo-dist/cargo-nightly-$triple.tar.gz | tar xvz -C /tmp
 /tmp/cargo-nightly-$triple/install.sh
 
-# install gtk
-apt-get install -y libgtk-3-dev
+# install gtk and libcurl3
+apt-get install -y libgtk-3-dev libcurl3
 
 # cleanup package manager
 apt-get autoclean && apt-get clean # remove --purge -y curl && apt-get autoclean && apt-get clean

@@ -1,3 +1,5 @@
+#Forked from https://github.com/schickling/dockerfiles/tree/master/rust
+
 FROM ubuntu:16.10
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
