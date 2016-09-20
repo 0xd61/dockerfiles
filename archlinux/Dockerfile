@@ -2,8 +2,8 @@ FROM base/archlinux
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 USER root
-
-RUN pacman -S sudo vim --noconfirm
+RUN pacman -Syu --noconfigm && \
+    pacman -S sudo vim --noconfirm
 
 # Add nonroot user and setup environment
 RUN groupadd -r pwner && \
