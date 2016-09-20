@@ -1,4 +1,5 @@
-FROM base/archlinux
+FROM greyltc/archlinux 
+#base was too old
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 USER root
