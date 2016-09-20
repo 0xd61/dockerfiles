@@ -2,7 +2,6 @@ FROM base/archlinux
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 USER root
-RUN pacman -Syu
 
 RUN pacman -S sudo vim --noconfirm
 
