@@ -12,7 +12,8 @@ RUN groupadd -r pwner && \
     mkdir /home/pwner
 
 #setup sudo
-RUN echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
+#RUN echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
+RUN echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER pwner
 ENV HOME /home/pwner
