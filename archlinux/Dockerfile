@@ -8,8 +8,11 @@ RUN pacman -Syu --noconfirm && \
 
 # Add nonroot user and setup environment
 RUN groupadd -r pwner && \
-  useradd -r -g pwner -G sudo -d /home/pwner -s /bin/bash -c "Nonroot User" pwner && \
+  useradd -r -g pwner -G wheel -d /home/pwner -s /bin/bash -c "Nonroot User" pwner && \
     mkdir /home/pwner
+
+#setup sudo
+RUN echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 
 USER pwner
 ENV HOME /home/pwner
