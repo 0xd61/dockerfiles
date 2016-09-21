@@ -3,7 +3,7 @@ FROM greyltc/archlinux
 MAINTAINER Kaitsh "Kaitsh@d-git.de"
 
 USER root
-RUN pacman -Syu --noconfigm && \
+RUN pacman -Syu --noconfirm && \
     pacman -S sudo vim --noconfirm
 
 # Add nonroot user and setup environment
